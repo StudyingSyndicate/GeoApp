@@ -4,7 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {
+  MatToolbarModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatButtonModule,
+  MatListModule
+} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -15,24 +21,23 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavMenuComponent,
-    HomeComponent,
-    CounterComponent,
-    FetchDataComponent
+    AppComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    MatButtonModule,
-    MatCheckboxModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatListModule
+    /*RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
-    ])
+    ])*/
   ],
   providers: [],
   bootstrap: [AppComponent]
