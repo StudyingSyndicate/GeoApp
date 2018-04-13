@@ -14,14 +14,15 @@ import {
 
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+//import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+/*import { CounterComponent } from './counter/counter.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -32,12 +33,12 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     MatIconModule,
     MatSidenavModule,
     MatButtonModule,
-    MatListModule
-    /*RouterModule.forRoot([
+    MatListModule,
+    RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-    ])*/
+      /*{ path: 'counter', component: CounterComponent },
+      { path: 'fetch-data', component: FetchDataComponent },*/
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
