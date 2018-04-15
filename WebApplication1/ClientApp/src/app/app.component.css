@@ -2,13 +2,14 @@
   flex: 1 1 auto;
 }
 
-.app-menu-icon {
-  margin: 0px 5px;
-  cursor: pointer
+.app-menu-button {
+  margin: 0 5px 0 0;
+  padding: 0;
+  height: 100%;
 }
 
 .app-nav-company {
-  font-size: 0.75em;
+  font-size: 16px;
 }
 
 .app-sidenav-container {
@@ -24,5 +25,24 @@
 }
 
 .app-username {
-  font-size: 0.75em;
+  font-size: 16px;
+}
+
+.mat-toolbar {
+  position: fixed;
+  z-index: 10;
+}
+
+mat-sidenav.mat-sidenav {
+  top: 64px;
+  background-color: #fafafa;
+  box-shadow: 6px 0 6px rgba(0,0,0,.1);
+}
+
+mat-toolbar.mat-toolbar mat-toolbar-row {
+  padding: 0 16px 0 0;
+}
+
+.app-sidenav-content {
+  padding: 80px 48px 16px 48px;
 }

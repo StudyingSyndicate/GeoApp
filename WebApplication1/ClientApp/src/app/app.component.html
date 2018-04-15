@@ -8,16 +8,25 @@
     </div>
   </div>
 </div-->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="app-menu-button" (click)="sidenav.toggle()" title="Навигация">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="app-nav-company">Акционерное общество «Геологические Технологии Сибири»</span>
+    <span class="app-spacer"></span>
+    <mat-icon>search</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 <mat-sidenav-container class="app-sidenav-container">
   <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="app-sidenav">
-    <mat-toolbar color="primary">
-      <span class="app-username">Имя пользователя</span>
-      <span class="app-spacer"></span>
-      <button mat-raised-button color="accent">Выход</button>
-    </mat-toolbar>
-    
     <mat-list>
+      <mat-list-item>
+        <span class="app-username">Имя пользователя</span>
+        <span class="app-spacer"></span>
+        <button mat-raised-button color="accent">Выход</button>
+      </mat-list-item>
       <mat-list-item>
         <button mat-button color="primary">Пункт меню 1</button>
       </mat-list-item>
@@ -28,16 +37,8 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <mat-toolbar-row>
-        <mat-icon class="app-menu-icon" (click)="sidenav.toggle()">menu</mat-icon>
-        <span class="app-nav-company">Акционерное общество «Геологические Технологии Сибири»</span>
-        <span class="app-spacer"></span>
-        <mat-icon>search</mat-icon>
-      </mat-toolbar-row>
-    </mat-toolbar>
-    <router-outlet></router-outlet>
+    <div class="app-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-
