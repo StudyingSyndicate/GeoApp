@@ -1,10 +1,10 @@
 {
-  "name": "WebApplication1",
+  "name": "geoapp",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --extract-css",
+    "start": "ng serve --extract-css --port 50186",
     "build": "ng build --extract-css",
     "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
     "test": "ng test",
