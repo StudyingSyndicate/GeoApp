@@ -11,6 +11,7 @@ import {
   MatButtonModule,
   MatListModule
 } from '@angular/material';
+import { OwlModule } from 'ngx-owl-carousel';
 
 
 import { AppComponent } from './app.component';
@@ -34,6 +35,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MatSidenavModule,
     MatButtonModule,
     MatListModule,
+    OwlModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       /*{ path: 'counter', component: CounterComponent },
