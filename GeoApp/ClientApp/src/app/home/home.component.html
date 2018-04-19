@@ -1,41 +1,21 @@
-<h1>Here some home page content</h1>
-<!--owl-carousel [options]="{items: 3, dots: false, navigation: false}"
-     [items]="images"
-     [carouselClasses]="['owl-theme', 'row', 'sliding']">
-         <div class="thumbnail-image home-corusel-item"></div>
- </owl-carousel-->
-<!--div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div-->
+<owl-carousel [options]="myOptions"
+              [carouselClasses]="['owl-theme', 'row', 'sliding']">
+    <img src="../../assets/temp_pics/1.jpg" title="pict1" />
+    <img src="../../assets/temp_pics/2.jpg" title="pict2" />
+    <img src="../../assets/temp_pics/3.jpg" title="pict3" />
+    <img src="../../assets/temp_pics/4.jpg" title="pict4" />
+</owl-carousel>
 
-<h3>Sample 1</h3>
-<owl-carousel [options]="{navigation: true, pagination: false, rewindNav : false}">
-  <div *ngFor="let item of items1">
-    <span>{{ item }}</span>
-  </div>
+<owl-carousel [options]="myOptions2"
+              [carouselClasses]="['owl-theme', 'row', 'sliding']">
+  <img src="../../assets/temp_pics/1.jpg" title="pict1" />
+  <img src="../../assets/temp_pics/2.jpg" title="pict2" />
+  <img src="../../assets/temp_pics/3.jpg" title="pict3" />
+  <img src="../../assets/temp_pics/4.jpg" title="pict4" />
 </owl-carousel>
-<h3>Sample 2</h3>
-<owl-carousel [options]="{navigation: false, pagination: true, rewindNav : false}">
-  <div *ngFor="let item of items2">
-    <p>{{ item }}</p>
-  </div>
-</owl-carousel>
-<h3>Sample 3</h3>
-<owl-carousel [options]="{navigation: false, pagination: true, rewindNav : false}">
-  <img src="../../assets/SibGeoTekh_logo.jpg" title="pict1" />
-  <img src="../../assets/SibGeoTekh_logo.jpg" title="pict2" />
-  <img src="../../assets/SibGeoTekh_logo.jpg" title="pict3" />
-  <img src="../../assets/SibGeoTekh_logo.jpg" title="pict4" />
-  <img src="../../assets/SibGeoTekh_logo.jpg" title="pict5" />
-</owl-carousel>
+<div id='carousel-custom-dots' class='owl-dots my-dots-container'>
+    <button mat-button color="primary" class="my-dot">1</button>
+    <button mat-button color="primary" class="my-dot">2</button>
+    <button mat-button color="primary" class="my-dot">3</button>
+    <button mat-button color="primary" class="my-dot">4</button>
+</div>

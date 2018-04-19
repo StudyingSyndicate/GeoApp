@@ -7,7 +7,18 @@ import { OwlCarousel } from 'ngx-owl-carousel';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  items1: Array<number> = [1, 2, 3, 4, 5];
-
-  items2: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  myOptions = {
+    //autoplay: true,
+    loop: true,
+    items: 1,
+    dots: true,
+    //dotsContainer: '#carousel-custom-dots'
+  };
+  myOptions2 = {
+    //autoplay: true,
+    loop: true,
+    items: 1,
+    dots: true,
+    dotsContainer: '#carousel-custom-dots'
+  };
 }
