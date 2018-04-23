@@ -46,3 +46,8 @@ mat-toolbar.mat-toolbar mat-toolbar-row {
 .app-sidenav-content {
   padding: 80px 48px 16px 48px;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

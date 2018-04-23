@@ -14,6 +14,7 @@
     <button mat-button class="app-menu-button" (click)="sidenav.toggle()" title="Навигация">
       <mat-icon>menu</mat-icon>
     </button>
+    <a [routerLink]='["/"]'><mat-icon>copyright</mat-icon></a>
     <span class="app-nav-company">Акционерное общество «Геологические Технологии Сибири»</span>
     <span class="app-spacer"></span>
     <mat-icon>search</mat-icon>
@@ -29,10 +30,10 @@
         <button mat-raised-button color="accent">Выход</button>
       </mat-list-item>
       <mat-list-item>
-        <button mat-button color="primary">О компании</button>
+        <button mat-button color="primary" routerLink="/about">О компании</button>
       </mat-list-item>
       <mat-list-item>
-        <button mat-button color="primary">Услуги</button>
+        <button mat-button color="primary" routerLink="/geo-services">Услуги</button>
       </mat-list-item>
       <mat-list-item>
         <button mat-button color="primary">Проекты</button>
