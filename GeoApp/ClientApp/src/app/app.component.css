@@ -31,7 +31,7 @@
 .mat-toolbar {
   position: fixed;
   z-index: 10;
-}
+  }
 
 mat-sidenav.mat-sidenav {
   top: 64px;
@@ -50,4 +50,17 @@ mat-toolbar.mat-toolbar mat-toolbar-row {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+.toolbar-logo {
+  height: 80px;
+  margin-top: 7px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 80px
+}
+.sidenav-logo {
+  height: 300px;
+  width: 300px;
+  margin-top:170px;
 }

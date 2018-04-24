@@ -9,12 +9,13 @@
   </div>
 </div-->
 
+
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <button mat-button class="app-menu-button" (click)="sidenav.toggle()" title="Навигация">
       <mat-icon>menu</mat-icon>
     </button>
-    <a [routerLink]='["/"]'><mat-icon>copyright</mat-icon></a>
+    <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="toolbar-logo" /></a>
     <span class="app-nav-company">Акционерное общество «Геологические Технологии Сибири»</span>
     <span class="app-spacer"></span>
     <mat-icon>search</mat-icon>
@@ -50,7 +51,8 @@
       <mat-list-item>
         <button mat-button color="primary">Контакты</button>
       </mat-list-item>
-        </mat-list>
+    </mat-list>
+    <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="sidenav-logo" /></a>
   </mat-sidenav>
 
   <mat-sidenav-content>
