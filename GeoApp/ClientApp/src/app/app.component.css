@@ -31,7 +31,7 @@
 .mat-toolbar {
   position: fixed;
   z-index: 10;
-  }
+}
 
 mat-sidenav.mat-sidenav {
   top: 64px;
@@ -59,6 +59,7 @@ a {
   margin-right: 2px;
   width: 80px
 }
+
 .sidenav-logo {
   height: 300px;
   width: 300px;

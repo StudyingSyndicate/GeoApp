@@ -1,15 +1,3 @@
-<!--div class='container-fluid'>
-  <div class='row'>
-    <div class='col-sm-3'>
-      <app-nav-menu></app-nav-menu>
-    </div>
-    <div class='col-sm-9 body-content'>
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div-->
-
-
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <button mat-button class="app-menu-button" (click)="sidenav.toggle()" title="Навигация">
@@ -52,7 +40,6 @@
         <button mat-button color="primary">Контакты</button>
       </mat-list-item>
     </mat-list>
-    <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="sidenav-logo" /></a>
   </mat-sidenav>
 
   <mat-sidenav-content>
