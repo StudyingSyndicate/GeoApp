@@ -17,7 +17,7 @@ import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppComponent } from './app.component';
 //import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './user/components/home/home.component';
 import { GeoServicesComponent } from './user/components/geo-services/geo-services.component';
 import { AboutComponent } from './user/components/about/about.component';
 import { AboutMainComponent } from './user/components/about/tabs/about-main/about-main.component';
