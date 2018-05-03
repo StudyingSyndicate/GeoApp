@@ -3,11 +3,3 @@
   font-family: arial,helvetica,sans-serif;
   font-size: 16px;
 }
-img {
-  transition: zoom 0.25s ease;
-}
-
-  img:active {
-    zoom: 100%
-  }
-
