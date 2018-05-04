@@ -4,11 +4,10 @@
 body {
   margin: 0;
 }
-
-img {
+.img {
   transition: zoom 0.25s ease;
 }
 
-  img:active {
+.img:active {
     zoom: 150%
   }
