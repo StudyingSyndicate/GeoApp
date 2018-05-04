@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\user\components\about\tabs\" />
+    <Folder Include="ClientApp\src\app\user\components\geo-services\tabs\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

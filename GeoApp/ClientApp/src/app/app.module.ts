@@ -26,6 +26,11 @@ import { AboutHistoryComponent } from './user/components/about/tabs/about-histor
 import { AboutStructureComponent } from './user/components/about/tabs/about-structure/about-structure.component';
 import { AboutGeographyComponent } from './user/components/about/tabs/about-geography/about-geography.component';
 import { AboutDocumentsComponent } from './user/components/about/tabs/about-documents/about-documents.component';
+import { GeoResearchComponent } from './user/components/geo-services/tabs/geo-research/geo-research.component';
+import { IngeneeringResearchComponent } from './user/components/geo-services/tabs/ingeneering-research/ingeneering-research.component';
+import { MinePlanningComponent } from './user/components/geo-services/tabs/mine-planning/mine-planning.component';
+import { EcoResearchComponent } from './user/components/geo-services/tabs/eco-research/eco-research.component';
+import { SurveyorWorksComponent } from './user/components/geo-services/tabs/surveyor-works/surveyor-works.component';
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -40,7 +45,12 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     AboutHistoryComponent,
     AboutStructureComponent,
     AboutGeographyComponent,
-    AboutDocumentsComponent
+    AboutDocumentsComponent,
+    GeoResearchComponent,
+    IngeneeringResearchComponent,
+    MinePlanningComponent,
+    EcoResearchComponent,
+    SurveyorWorksComponent
     ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
