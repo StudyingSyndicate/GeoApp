@@ -1,0 +1,8 @@
+img {
+  transition: zoom 0.25s ease;
+  height:800px;
+}
+
+img:active {
+  zoom: 150%
+}

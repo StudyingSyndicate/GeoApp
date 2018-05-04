@@ -4,10 +4,3 @@
 body {
   margin: 0;
 }
-.img {
-  transition: zoom 0.25s ease;
-}
-
-.img:active {
-    zoom: 150%
-  }
