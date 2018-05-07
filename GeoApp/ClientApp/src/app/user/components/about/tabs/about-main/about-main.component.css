@@ -2,12 +2,16 @@ q {
   quotes: "\00ab" "\00bb";
 }
 
-p{
+h1 {
   font-size: 16px;
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;
-  margin-bottom: 4%;
-  }
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
 ol {
   counter-reset: item
 }
