@@ -1,5 +1,26 @@
-.about-text {
+q {
+  quotes: "\00ab" "\00bb";
+}
+
+p{
   font-size: 16px;
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;
+  margin-bottom: 4%;
+  }
+ol {
+  counter-reset: item
 }
+
+li {
+  display: block;
+  font-size: 16px;
+  color: #FAEBD7;
+  font-family: arial,helvetica,sans-serif;
+  line-height: 1.8;
+}
+
+  li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+  }
