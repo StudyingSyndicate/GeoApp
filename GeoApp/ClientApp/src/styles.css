@@ -4,3 +4,60 @@
 body {
   margin: 0;
 }
+
+div.text q {
+  quotes: "\00ab" "\00bb";
+}
+
+div.text p {
+  font-size: 16px;
+  color: #FAEBD7;
+  font-family: arial,helvetica,sans-serif;
+  line-height: 1.8;
+  margin-left: 35px;
+}
+
+  div.text p.fig {
+    text-align: center;
+  }
+
+div.text ol {
+  font-size: 16px;
+  color: #FAEBD7;
+  font-family: arial,helvetica,sans-serif;
+  line-height: 1.8;
+  counter-reset: item
+}
+
+div.text li {
+  display: block;
+  font-size: 16px;
+  color: #FAEBD7;
+  font-family: arial,helvetica,sans-serif;
+  line-height: 1.8;
+}
+
+  div.text li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+  }
+
+div.text h1 {
+  font-size: 16px;
+  color: #FAEBD7;
+  font-family: arial,helvetica,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 50px;
+}
+
+div.text h2 {
+  font-size: 16px;
+  color: #FAEBD7;
+  font-family: arial,helvetica,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
