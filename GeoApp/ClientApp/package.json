@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --extract-css --port 50186",
+    "start": "ng serve --extract-css --port 4200",
     "build": "ng build --extract-css",
     "build:ssr": "npm run build -- --app=ssr --output-hashing=media",
     "test": "ng test",
@@ -26,6 +26,7 @@
     "@angular/platform-server": "^5.0.0",
     "@angular/router": "^5.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
+    "@ngx-gallery/core": "^2.0.3",
     "angular-bootstrap-md": "^5.2.3",
     "angular4-carousel": "^3.1.8",
     "aspnet-prerendering": "^3.0.1",
