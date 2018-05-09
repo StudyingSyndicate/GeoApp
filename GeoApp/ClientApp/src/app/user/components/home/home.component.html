@@ -20,6 +20,17 @@
     <button mat-button color="primary" class="my-dot">4</button>
 </div>
 
+<br>
 <mat-divider></mat-divider>
 <br>
 <gallery id="ex1" style="height: 500px;" [items]="items" thumbPosition="left"></gallery>
+
+<br>
+<mat-divider></mat-divider>
+<br>
+
+<div class="grid">
+  <div class="grid-item" *ngFor="let item of items; let i = index" (click)="lightbox.open(i)">
+    <img [src]="item.data.src">
+  </div>
+</div>

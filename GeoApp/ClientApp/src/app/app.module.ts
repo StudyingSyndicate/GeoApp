@@ -14,6 +14,7 @@ import {
 } from '@angular/material';
 import { OwlModule } from 'ngx-owl-carousel';
 import { GalleryModule } from "@ngx-gallery/core";
+import { LightboxModule } from  '@ngx-gallery/lightbox';
 
 
 import { AppComponent } from './app.component';
@@ -66,6 +67,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MatTabsModule,
     OwlModule,
     GalleryModule.forRoot({ gestures:false }),
+    LightboxModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'about', component: AboutComponent },
