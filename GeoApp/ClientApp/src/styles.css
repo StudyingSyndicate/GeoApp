@@ -17,6 +17,8 @@ div.text p {
   font-family: arial,helvetica,sans-serif;
   line-height: 1.8;
   margin-left: 35px;
+  text-indent: 30px;
+  text-align: justify;
 }
 
   div.text p.fig {

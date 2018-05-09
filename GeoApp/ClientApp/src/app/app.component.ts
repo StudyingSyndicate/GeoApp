@@ -8,4 +8,29 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   opened = true;
+
+  sideNavItems = [{
+    name: 'О компании',
+    link: 'about'
+  }, {
+    name: 'Услуги',
+    link: 'geo-services'
+  }, {
+    name: 'Проекты',
+    link: ''
+  }, {
+    name: 'Фотогаллерея',
+    link: ''
+  }, {
+    name: 'Публикации',
+    link: ''
+  }, {
+    name: 'Вакансии',
+    link: ''
+  }, {
+    name: 'Контакты',
+    link: ''
+  }];
+
+
 }

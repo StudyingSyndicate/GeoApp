@@ -18,27 +18,15 @@
         <span class="app-spacer"></span>
         <button mat-raised-button color="accent">Выход</button>
       </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary" routerLink="/about">О компании</button>
+
+      <mat-list-item *ngFor="let item of sideNavItems;">
+        <button
+          mat-button
+          color="primary"
+          [routerLink]="item.link"
+          (click)="sidenav.toggle()" >{{item.name}}</button>
       </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary" routerLink="/geo-services">Услуги</button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary">Проекты</button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary">Фотогаллерея</button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary">Публикации</button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary">Вакансии</button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button color="primary">Контакты</button>
-      </mat-list-item>
+
     </mat-list>
   </mat-sidenav>
 
