@@ -17,7 +17,7 @@ export class AppComponent {
     link: 'geo-services'
   }, {
     name: 'Проекты',
-    link: ''
+    link: 'projects'
   }, {
     name: 'Фотогаллерея',
     link: ''

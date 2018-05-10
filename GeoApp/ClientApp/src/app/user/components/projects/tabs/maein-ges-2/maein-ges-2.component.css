@@ -1,0 +1,28 @@
+.grid-item {
+  margin: 1em;
+  border-radius: .2em;
+  overflow: hidden;
+  padding: 0;
+  width: 280px;
+  height: auto;
+}
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 3em 0;
+}

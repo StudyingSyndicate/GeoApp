@@ -10,7 +10,8 @@ import {
   MatSidenavModule,
   MatButtonModule,
   MatListModule,
-  MatTabsModule
+  MatTabsModule,
+  MatCardModule
 } from '@angular/material';
 import { OwlModule } from 'ngx-owl-carousel';
 import { GalleryModule } from "@ngx-gallery/core";
@@ -33,6 +34,14 @@ import { IngeneeringResearchComponent } from './user/components/geo-services/tab
 import { MinePlanningComponent } from './user/components/geo-services/tabs/mine-planning/mine-planning.component';
 import { EcoResearchComponent } from './user/components/geo-services/tabs/eco-research/eco-research.component';
 import { SurveyorWorksComponent } from './user/components/geo-services/tabs/surveyor-works/surveyor-works.component';
+import { ProjectsComponent } from './user/components/projects/projects.component';
+import { OrnaculComponent } from './user/components/projects/tabs/ornacul/ornacul.component';
+import { AccaragComponent } from './user/components/projects/tabs/accarag/accarag.component';
+import { OrsugComponent } from './user/components/projects/tabs/orsug/orsug.component';
+import { MaeinComponent } from './user/components/projects/tabs/maein/maein.component';
+import { CpsNgkmComponent } from './user/components/projects/tabs/cps-ngkm/cps-ngkm.component';
+import { MaeinGesComponent } from './user/components/projects/tabs/maein-ges/maein-ges.component';
+import { MaeinGes2Component } from './user/components/projects/tabs/maein-ges-2/maein-ges-2.component';
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -52,7 +61,15 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     IngeneeringResearchComponent,
     MinePlanningComponent,
     EcoResearchComponent,
-    SurveyorWorksComponent
+    SurveyorWorksComponent,
+    ProjectsComponent,
+    OrnaculComponent,
+    AccaragComponent,
+    OrsugComponent,
+    MaeinComponent,
+    CpsNgkmComponent,
+    MaeinGesComponent,
+    MaeinGes2Component
     ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -65,13 +82,22 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MatButtonModule,
     MatListModule,
     MatTabsModule,
+    MatCardModule,
     OwlModule,
     GalleryModule.forRoot({ gestures:false }),
     LightboxModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'about', component: AboutComponent },
-      { path: 'geo-services', component: GeoServicesComponent }
+      { path: 'geo-services', component: GeoServicesComponent },
+      { path: 'projects', component: ProjectsComponent },
+      { path: 'ornacul', component: OrnaculComponent },
+      { path: 'accarag', component: AccaragComponent },
+      { path: 'cps-ngkm', component: CpsNgkmComponent },
+      { path: 'maein', component: MaeinComponent },
+      { path: 'maein-ges', component: MaeinGesComponent },
+      { path: 'maein-ges-2', component: MaeinGes2Component },
+      { path: 'orsug', component: OrsugComponent }
       /*{ path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },*/
     ])

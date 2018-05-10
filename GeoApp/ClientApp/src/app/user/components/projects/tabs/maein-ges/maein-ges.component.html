@@ -1,0 +1,14 @@
+<button mat-raised-button color="primary" routerLink="/projects">Назад</button>
+
+<div class="grid">
+  <div class="grid-item" *ngFor="let item of items; let i = index" (click)="lightbox.open(i)">
+    <img [src]="item.data.src">
+  </div>
+</div>
+
+<div class="common-text">
+  <p>Заказчик: ПАО <q>Ленгидропроект</q></p>
+  <p>Дата сдачи: 2015г.</p>
+  <p>Тип проекта: Инженерно-геологические изыскания</p>
+  <p>Округ: Сибирский федеральный округ</p>
+</div>

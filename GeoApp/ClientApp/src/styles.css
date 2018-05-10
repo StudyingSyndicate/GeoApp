@@ -7,11 +7,11 @@ body {
   margin: 0;
 }
 
-div.text q {
+div.common-text q {
   quotes: "\00ab" "\00bb";
 }
 
-div.text p {
+div.common-text p {
   font-size: 16px;
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;
@@ -21,11 +21,11 @@ div.text p {
   text-align: justify;
 }
 
-  div.text p.fig {
+  div.common-text p.fig {
     text-align: center;
-  }
+}
 
-div.text ol {
+div.common-text ol {
   font-size: 16px;
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;
@@ -33,7 +33,7 @@ div.text ol {
   counter-reset: item
 }
 
-div.text li {
+div.common-text li {
   display: block;
   font-size: 16px;
   color: #FAEBD7;
@@ -41,12 +41,12 @@ div.text li {
   line-height: 1.8;
 }
 
-  div.text li:before {
+  div.common-text li:before {
     content: counters(item, ".") " ";
     counter-increment: item
-  }
+}
 
-div.text h1 {
+div.common-text h1 {
   font-size: 16px;
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;
@@ -56,7 +56,7 @@ div.text h1 {
   margin-bottom: 50px;
 }
 
-div.text h2 {
+div.common-text h2 {
   font-size: 16px;
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;

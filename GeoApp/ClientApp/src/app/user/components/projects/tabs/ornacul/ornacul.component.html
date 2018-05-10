@@ -1,0 +1,14 @@
+<button mat-raised-button color="primary" routerLink="/projects">Назад</button>
+
+<div class="grid">
+  <div class="grid-item" *ngFor="let item of items; let i = index" (click)="lightbox.open(i)">
+    <img [src]="item.data.src">
+  </div>
+</div>
+
+<div class="common-text">
+  <p>Заказчик: ООО <q>Природапромдобыча</q></p>
+  <p>Дата сдачи: 2015-2016 гг.</p>
+  <p>Тип проекта: Геологоразведочные работы, подсчёт запасов</p>
+  <p>Округ: Сибирский федеральный округ</p>  
+</div>
