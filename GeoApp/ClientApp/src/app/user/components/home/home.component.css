@@ -23,23 +23,3 @@ owl-carousel ::ng-deep .owl-dot {
   width: 200px;
   height: 140px;
 }
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-}
-
-.grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 3em 0;
-}
