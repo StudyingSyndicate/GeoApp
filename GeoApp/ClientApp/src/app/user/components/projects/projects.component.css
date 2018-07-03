@@ -1,5 +1,4 @@
 .card {
-  max-width: 300px;
   display: inline-grid;
   justify-content: center;
   -webkit-box-align: center;
@@ -7,15 +6,15 @@
   align-items: baseline;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 3em 0;
-}
-
-.mat-card-image {
-  width:350px;
-  height: 400px
+  margin: 10px;
+  text-indent: 20px;
 }
 
 .card.mat-card {
   width:350px;
-  height: 580px
+  height: 340px
+}
+
+.info-btn {
+  float: right;
 }
