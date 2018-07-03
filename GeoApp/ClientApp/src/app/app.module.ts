@@ -42,6 +42,7 @@ import { MaeinComponent } from './user/components/projects/tabs/maein/maein.comp
 import { CpsNgkmComponent } from './user/components/projects/tabs/cps-ngkm/cps-ngkm.component';
 import { MaeinGesComponent } from './user/components/projects/tabs/maein-ges/maein-ges.component';
 import { MaeinGes2Component } from './user/components/projects/tabs/maein-ges-2/maein-ges-2.component';
+import {UserRoutingModule} from "./user-routing.module";
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -86,21 +87,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     OwlModule,
     GalleryModule.forRoot({ gestures:false }),
     LightboxModule.forRoot(),
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'about', component: AboutComponent },
-      { path: 'geo-services', component: GeoServicesComponent },
-      { path: 'projects', component: ProjectsComponent },
-      { path: 'ornacul', component: OrnaculComponent },
-      { path: 'accarag', component: AccaragComponent },
-      { path: 'cps-ngkm', component: CpsNgkmComponent },
-      { path: 'maein', component: MaeinComponent },
-      { path: 'maein-ges', component: MaeinGesComponent },
-      { path: 'maein-ges-2', component: MaeinGes2Component },
-      { path: 'orsug', component: OrsugComponent }
-      /*{ path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },*/
-    ])
+    UserRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
