@@ -1,6 +1,21 @@
-
 p {
   color: #FAEBD7;
   font-family: arial,helvetica,sans-serif;
   font-size: 16px;
 }
+
+.mat-card {
+  width: 200px;
+  height: 200px
+}
+
+.mat-card-image {
+  height: 100px;
+  width: auto;
+}
+
+.staff-image {
+  background-image: url("../../../../../../assets/sovluk.png");
+  background-size: cover;
+}
+

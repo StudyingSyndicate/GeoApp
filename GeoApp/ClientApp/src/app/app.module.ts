@@ -70,7 +70,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MaeinComponent,
     CpsNgkmComponent,
     MaeinGesComponent,
-    MaeinGes2Component
+    MaeinGes2Component,
     ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
