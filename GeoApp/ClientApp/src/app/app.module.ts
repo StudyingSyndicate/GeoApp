@@ -35,13 +35,13 @@ import { MinePlanningComponent } from './user/components/geo-services/tabs/mine-
 import { EcoResearchComponent } from './user/components/geo-services/tabs/eco-research/eco-research.component';
 import { SurveyorWorksComponent } from './user/components/geo-services/tabs/surveyor-works/surveyor-works.component';
 import { ProjectsComponent } from './user/components/projects/projects.component';
-import { OrnaculComponent } from './user/components/projects/tabs/ornacul/ornacul.component';
-import { AccaragComponent } from './user/components/projects/tabs/accarag/accarag.component';
-import { OrsugComponent } from './user/components/projects/tabs/orsug/orsug.component';
-import { MaeinComponent } from './user/components/projects/tabs/maein/maein.component';
-import { CpsNgkmComponent } from './user/components/projects/tabs/cps-ngkm/cps-ngkm.component';
-import { MaeinGesComponent } from './user/components/projects/tabs/maein-ges/maein-ges.component';
-import { MaeinGes2Component } from './user/components/projects/tabs/maein-ges-2/maein-ges-2.component';
+import { OrnaculComponent } from './user/components/projects/items/ornacul/ornacul.component';
+import { AccaragComponent } from './user/components/projects/items/accarag/accarag.component';
+import { OrsugComponent } from './user/components/projects/items/orsug/orsug.component';
+import { MaeinComponent } from './user/components/projects/items/maein/maein.component';
+import { CpsNgkmComponent } from './user/components/projects/items/cps-ngkm/cps-ngkm.component';
+import { MaeinGesComponent } from './user/components/projects/items/maein-ges/maein-ges.component';
+import { MaeinGes2Component } from './user/components/projects/items/maein-ges-2/maein-ges-2.component';
 import {UserRoutingModule} from "./user-routing.module";
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
