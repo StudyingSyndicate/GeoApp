@@ -43,6 +43,7 @@ import { CpsNgkmComponent } from './user/components/projects/items/cps-ngkm/cps-
 import { MaeinGesComponent } from './user/components/projects/items/maein-ges/maein-ges.component';
 import { MaeinGes2Component } from './user/components/projects/items/maein-ges-2/maein-ges-2.component';
 import {UserRoutingModule} from "./user-routing.module";
+import {SlideshowModule} from 'ng-simple-slideshow';
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -73,6 +74,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MaeinGes2Component,
     ],
   imports: [
+    SlideshowModule,
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     BrowserAnimationsModule,
     HttpClientModule,
@@ -87,7 +89,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     OwlModule,
     GalleryModule.forRoot({ gestures:false }),
     LightboxModule.forRoot(),
-    UserRoutingModule
+    UserRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

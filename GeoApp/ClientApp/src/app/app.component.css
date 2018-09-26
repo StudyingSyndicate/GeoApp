@@ -12,12 +12,27 @@
   font-size: 16px;
 }
 
+.app-content-container {
+  position: relative;
+}
+
 .app-sidenav-container {
   position: absolute;
+  min-height: 100% !important;
+  height: 100%;
+  width: 100%;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+}
+
+.app-slideshow {
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.mat-drawer-container {
+  background-color: transparent;
 }
 
 .app-sidenav {

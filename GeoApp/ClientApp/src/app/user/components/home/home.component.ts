@@ -6,15 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  public carouselOptions = {
-    autoplay: true,
-    loop: true,
-    items: 1,
-    dots: false,
-    dotsContainer: '#carousel-custom-dots',
-    autoWidth: true,
-    center: true,
-  };
 
   constructor() {
   }
