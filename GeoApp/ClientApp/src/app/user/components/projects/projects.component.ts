@@ -45,7 +45,7 @@ export class ProjectsComponent implements OnInit {
     image: '../../../../assets/projects/maein-ges_1_.jpg',
     text: ' Изучение ИГУ условий левобережного водосброса майнской ГЭС 2015 г.',
     rout: 'maein-ges-2'
-  },]
+  },];
 
   constructor() {
   }
