@@ -1,18 +1,23 @@
-.card {
-  display: inline-grid;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: baseline;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 10px;
-  text-indent: 20px;
+p {
+  color: #FAEBD7;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 16px;
 }
 
-.card.mat-card {
-  width:350px;
-  height: 340px
+.mat-card {
+  width: 200px;
+  height: 300px;
+  display: inline-table;
+  margin: 5px;
+}
+
+.mat-card-header {
+  justify-content: center;
+}
+
+.mat-card-image {
+  height: 200px;
+  width: auto;
 }
 
 .info-btn {

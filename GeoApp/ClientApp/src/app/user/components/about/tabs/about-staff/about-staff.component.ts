@@ -16,7 +16,7 @@ export class AboutStaffComponent implements OnInit {
     position: 'Директор отдела геологоразведочных работ',
     image: '../../../../../../assets/asovluk.png'
   }, {
-    name: 'Хомяков Андрей Сергеевич',
+    name: 'Андрей Хомяков',
     position: 'Директор отдела инженерных изысканий',
     image: '../../../../../../assets/male_icon.jpg'
   }];
