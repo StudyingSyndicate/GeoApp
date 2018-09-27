@@ -5,8 +5,8 @@ p {
 }
 
 .mat-card {
-  width: 200px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   display: inline-table;
   margin: 5px;
 }
