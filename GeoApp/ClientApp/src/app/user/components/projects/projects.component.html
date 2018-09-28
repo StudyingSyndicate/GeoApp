@@ -1,115 +1,17 @@
-<div>
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/accarag_1_.jpg" alt="Аккарагское">
-    <mat-card-content>
-      <p>
-        ТЭО временных разведочных кондиций с подсчетом запасов хромовых руд Аккаргинского месторождения Южного Урала 2015г
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button class="info-btn" mat-raised-button routerLink="accarag">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
+<mat-card *ngFor="let proj of itemsProject">
+  <mat-card-header>
+    <img mat-card-image src="{{proj.image}}" alt={{proj.name}}>
+  </mat-card-header>
 
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/accarag_1_.jpg" alt="Аккарагское">
-    <mat-card-content>
-      <p>
-        ТЭО временных разведочных кондиций с подсчетом запасов хромовых руд Аккаргинского месторождения Южного Урала 2015г
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button class="info-btn" mat-raised-button routerLink="/accarag">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
+  <mat-card-content>
+    <p>
+      {{proj.text}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button class="info-btn" mat-raised-button routerLink={{proj.route}}>Подробнее</button>
+  </mat-card-actions>
+</mat-card>
 
-  <!--mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/ornakul_1_.jpg" alt="Орнакул">
-    <mat-card-content>
-      <p>
-        Геологоразведочные работы на лицензионной площади россыпного месторождения золота р. Орнакул
-        2015-2016 гг.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/ornacul">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
 
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/accarag_1_.jpg" alt="Аккарагское">
-    <mat-card-content>
-      <p>
-        ТЭО временных разведочных кондиций с подсчетом запасов хромовых руд Аккаргинского месторождения Южного Урала 2015г
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/accarag">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
 
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/orsuh_1_.jpg" alt="Орсуг">
-    <mat-card-content>
-      <p>
-        Геологоразведочные работы на Орасугском участке Борусского месторождения жадеита
-        2013-2016 гг.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/orsug">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/maein_1_.jpg" alt="Майнский">
-    <mat-card-content>
-      <p>
-        Испытания на механическую и сдвиговую прочность материалов упорных призм, подвергающихся сезонному замораживанию и оттаиванию грунтовых сооружений Майнского гидроузла
-        2015 г.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/maein">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/cps-ngkm_1_.jpg" alt="ЦПС НГКМ">
-    <mat-card-content>
-      <p>
-        Инженерно-геотехнические изыскания на объекте: «Обустройство Среднеботуобинского НГКМ. Расширение ЦПС».
-        2015г.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/cps-ngkm">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/maein-ges_1_.jpg" alt="Майнская ГЭС">
-    <mat-card-content>
-      <p>
-        Изыскательские работы под модернизацию участков ВЛ 35кВ Т-72/74 "РП-7"-ПС №3 и опоры мостового перехода через р. Уй на Майнской ГЭС.
-        2015 г.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/maein-ges">Подробнее</button>
-    </mat-card-actions>
-  </mat-card>
-
-  <mat-card class="card">
-    <img mat-card-image src="../../../../assets/projects/maein-ges_1_.jpg" alt="Майнская ГЭС">
-    <mat-card-content>
-      <p>
-        Изучение ИГУ условий левобережного водосброса майнской ГЭС
-        2015 г.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button routerLink="/maein-ges-2">Подробнее</button>
-    </mat-card-actions>
-  </mat-card-->
-</div>
