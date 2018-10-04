@@ -31,10 +31,6 @@
   background-color: transparent;
 }
 
-.app-sidenav {
-  width: 300px;
-}
-
 mat-list-item .mat-button {
   text-align: left;
 }
@@ -72,12 +68,6 @@ a {
   margin-top: 10px;
   margin-right: 10px;
   width: auto
-}
-
-.sidenav-logo {
-  height: 300px;
-  width: 300px;
-  margin-top: 170px;
 }
 
 .app-copyright {

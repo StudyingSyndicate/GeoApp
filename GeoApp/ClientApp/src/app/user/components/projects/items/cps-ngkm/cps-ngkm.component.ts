@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Gallery, GalleryItem, ImageItem } from "@ngx-gallery/core";
-import { Lightbox } from '@ngx-gallery/lightbox';
+import {Component, OnInit} from '@angular/core';
+import {Gallery, GalleryItem, ImageItem} from "@ngx-gallery/core";
+import {Lightbox} from '@ngx-gallery/lightbox';
 
 @Component({
   selector: 'app-cps-ngkm',
@@ -16,7 +16,8 @@ export class CpsNgkmComponent implements OnInit {
     preview: '../../assets/projects/cps-ngkm_1_.jpg',
   }];
 
-  constructor(public gallery: Gallery, public lightbox: Lightbox) { }
+  constructor(public gallery: Gallery, public lightbox: Lightbox) {
+  }
 
   ngOnInit() {
     this.items = this.imageData.map(item => new ImageItem(item.src, item.preview));
