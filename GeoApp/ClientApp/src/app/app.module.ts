@@ -44,6 +44,7 @@ import { MaeinGesComponent } from './user/components/projects/items/maein-ges/ma
 import { MaeinGes2Component } from './user/components/projects/items/maein-ges-2/maein-ges-2.component';
 import {UserRoutingModule} from "./user-routing.module";
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { CouruselComponent } from './user/components/courusel/courusel.component';
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -72,6 +73,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     CpsNgkmComponent,
     MaeinGesComponent,
     MaeinGes2Component,
+    CouruselComponent,
     ],
   imports: [
     SlideshowModule,
