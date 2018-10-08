@@ -21,12 +21,6 @@
   left: 0;
 }
 
-.app-slideshow {
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
 .mat-drawer-container {
   background-color: transparent;
 }

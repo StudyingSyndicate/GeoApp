@@ -11,8 +11,8 @@ export class CouruselComponent implements OnInit {
   /** Slideshow options*/
 
   width: string = '100%';
-  height: string = '1000px';
-  minHeight: string;
+  height: string = '100%';
+  minHeight: string = '700px';
   arrowSize: string = '30px';
   showArrows: boolean = false;
   disableSwiping: boolean = false;
