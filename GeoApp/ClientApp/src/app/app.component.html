@@ -10,30 +10,9 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<div class="app-content-container">
-  <slideshow #slideshow
-             class="app-slideshow"
-             [imageUrls]="images"
-             [height]="height"
-             [minHeight]="minHeight"
-             [arrowSize]="arrowSize"
-             [showArrows]="showArrows"
-             [disableSwiping]="disableSwiping"
-             [autoPlay]="autoPlay"
-             [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
-             [debug]="debug"
-             [backgroundSize]="backgroundSize"
-             [backgroundPosition]="backgroundPosition"
-             [backgroundRepeat]="backgroundRepeat"
-             [showDots]="showDots"
-             [dotColor]="dotColor"
-             [showCaptions]="showCaptions"
-             [captionColor]="captionColor"
-             [captionBackground]="captionBackground"
-             [lazyLoad]="lazyLoad"
-             [hideOnNoSlides]="hideOnNoSlides">
-  </slideshow>
+<app-courusel></app-courusel>
 
+<div>
   <mat-sidenav-container class="app-sidenav-container">
     <mat-sidenav
       #sidenav

@@ -14,42 +14,42 @@ div.common-text q {
 div.common-text p {
   font-size: 16px;
   color: #FAEBD7;
-  font-family: arial,helvetica,sans-serif;
+  font-family: arial, helvetica, sans-serif;
   line-height: 1.8;
   margin-left: 35px;
   text-indent: 30px;
   text-align: justify;
 }
 
-  div.common-text p.fig {
-    text-align: center;
+div.common-text p.fig {
+  text-align: center;
 }
 
 div.common-text ol {
   font-size: 16px;
   color: #FAEBD7;
-  font-family: arial,helvetica,sans-serif;
+  font-family: arial, helvetica, sans-serif;
   line-height: 1.8;
-  counter-reset: item
+  counter-reset: item;
 }
 
 div.common-text li {
   display: block;
   font-size: 16px;
   color: #FAEBD7;
-  font-family: arial,helvetica,sans-serif;
+  font-family: arial, helvetica, sans-serif;
   line-height: 1.8;
 }
 
-  div.common-text li:before {
-    content: counters(item, ".") " ";
-    counter-increment: item
+div.common-text li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
 }
 
 div.common-text h1 {
   font-size: 16px;
   color: #FAEBD7;
-  font-family: arial,helvetica,sans-serif;
+  font-family: arial, helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
@@ -59,9 +59,14 @@ div.common-text h1 {
 div.common-text h2 {
   font-size: 16px;
   color: #FAEBD7;
-  font-family: arial,helvetica,sans-serif;
+  font-family: arial, helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
   margin-top: 35px;
   margin-bottom: 40px;
+}
+
+div.common-text {
+  background: rgba(68, 68, 68, 0.9);
+  border-radius: 5px;
 }

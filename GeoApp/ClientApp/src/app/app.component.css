@@ -12,10 +12,6 @@
   font-size: 16px;
 }
 
-.app-content-container {
-  position: relative;
-}
-
 .app-sidenav-container {
   position: absolute;
   min-height: 100% !important;
@@ -25,18 +21,8 @@
   left: 0;
 }
 
-.app-slideshow {
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
 .mat-drawer-container {
   background-color: transparent;
-}
-
-.app-sidenav {
-  width: 300px;
 }
 
 mat-list-item .mat-button {
@@ -55,7 +41,7 @@ mat-list-item .mat-button {
 mat-sidenav.mat-sidenav {
   top: 64px;
   background-color: #fafafa;
-  box-shadow: 6px 0 6px rgba(0,0,0,.1);
+  box-shadow: 6px 0 6px rgba(0, 0, 0, .1);
 }
 
 mat-toolbar.mat-toolbar mat-toolbar-row {
@@ -63,7 +49,8 @@ mat-toolbar.mat-toolbar mat-toolbar-row {
 }
 
 .app-sidenav-content {
-  padding: 80px 48px 16px 48px;
+  padding: 80px 48px 0 48px;
+  min-height: calc(100% - 80px - 20px - 40px); /* 80px - верхний паддинг, 20px - просвет, 40px - высота копирайта*/
 }
 
 a {
@@ -78,18 +65,12 @@ a {
   width: auto
 }
 
-.sidenav-logo {
-  height: 300px;
-  width: 300px;
-  margin-top:170px;
-}
-
 .app-copyright {
-  position: absolute;
   width: 100%;
   color: #fff;
   line-height: 40px;
   font-size: 0.7em;
   text-align: center;
-  bottom:0;
+  bottom: 0;
+  margin: 0;
 }

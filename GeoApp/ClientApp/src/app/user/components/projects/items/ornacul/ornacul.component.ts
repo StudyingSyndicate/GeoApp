@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Gallery, GalleryItem, ImageItem } from "@ngx-gallery/core";
-import { Lightbox } from '@ngx-gallery/lightbox';
+import {Component, OnInit} from '@angular/core';
+import {Gallery, GalleryItem, ImageItem} from "@ngx-gallery/core";
+import {Lightbox} from '@ngx-gallery/lightbox';
 
 
 @Component({
   selector: 'app-ornacul',
   templateUrl: './ornacul.component.html',
   styleUrls: ['./ornacul.component.css'],
-  })
+})
 export class OrnaculComponent implements OnInit {
 
   items: GalleryItem[];
@@ -23,7 +23,8 @@ export class OrnaculComponent implements OnInit {
     preview: '../../assets/projects/ornakul_3_.jpg'
   }];
 
-  constructor(public gallery: Gallery, public lightbox: Lightbox) { }
+  constructor(public gallery: Gallery, public lightbox: Lightbox) {
+  }
 
   ngOnInit() {
     this.items = this.imageData.map(item => new ImageItem(item.src, item.preview));
