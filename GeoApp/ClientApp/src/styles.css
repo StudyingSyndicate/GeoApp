@@ -1,7 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
-/*@import '~@ngx-gallery/core/styles/gallery.css';
-@import '~@ngx-gallery/core/styles/lightbox.css';*/
 
 body {
   margin: 0;
@@ -69,4 +66,10 @@ div.common-text h2 {
 div.common-text {
   background: rgba(68, 68, 68, 0.9);
   border-radius: 5px;
+}
+
+/* style for ngx-gallery*/
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  -webkit-transform: none !important;
+  transform: none !important;
 }

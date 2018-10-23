@@ -2,23 +2,17 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {RouterModule} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
-  MatToolbarModule,
-  MatIconModule,
-  MatSidenavModule,
   MatButtonModule,
+  MatCardModule,
+  MatIconModule,
   MatListModule,
+  MatSidenavModule,
   MatTabsModule,
-  MatCardModule
+  MatToolbarModule
 } from '@angular/material';
-//import {GalleryModule} from "@ngx-gallery/core";
-//import {LightboxModule} from '@ngx-gallery/lightbox';
-
-
 import {AppComponent} from './app.component';
-//import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import {HomeComponent} from './user/components/home/home.component';
 import {GeoServicesComponent} from './user/components/geo-services/geo-services.component';
 import {AboutComponent} from './user/components/about/about.component';
@@ -34,17 +28,18 @@ import {MinePlanningComponent} from './user/components/geo-services/tabs/mine-pl
 import {EcoResearchComponent} from './user/components/geo-services/tabs/eco-research/eco-research.component';
 import {SurveyorWorksComponent} from './user/components/geo-services/tabs/surveyor-works/surveyor-works.component';
 import {ProjectsComponent} from './user/components/projects/projects.component';
-/*import {OrnaculComponent} from './user/components/projects/items/ornacul/ornacul.component';
+import {OrnaculComponent} from './user/components/projects/items/ornacul/ornacul.component';
 import {AccaragComponent} from './user/components/projects/items/accarag/accarag.component';
 import {OrsugComponent} from './user/components/projects/items/orsug/orsug.component';
 import {MaeinComponent} from './user/components/projects/items/maein/maein.component';
 import {CpsNgkmComponent} from './user/components/projects/items/cps-ngkm/cps-ngkm.component';
 import {MaeinGesComponent} from './user/components/projects/items/maein-ges/maein-ges.component';
-import {MaeinGes2Component} from './user/components/projects/items/maein-ges-2/maein-ges-2.component';*/
+import {MaeinGes2Component} from './user/components/projects/items/maein-ges-2/maein-ges-2.component';
 import {UserRoutingModule} from "./user-routing.module";
 import {SlideshowModule} from 'ng-simple-slideshow';
 import {CouruselComponent} from './user/components/courusel/courusel.component';
-
+import {SharedModule} from "./shared/shared.module";
+import { ProjectItemComponent } from './user/components/projects/project-item/project-item.component';
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -66,14 +61,15 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     EcoResearchComponent,
     SurveyorWorksComponent,
     ProjectsComponent,
-    /*OrnaculComponent,
+    OrnaculComponent,
     AccaragComponent,
     OrsugComponent,
     MaeinComponent,
     CpsNgkmComponent,
     MaeinGesComponent,
-    MaeinGes2Component,*/
+    MaeinGes2Component,
     CouruselComponent,
+    ProjectItemComponent,
   ],
   imports: [
     SlideshowModule,
@@ -88,10 +84,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MatListModule,
     MatTabsModule,
     MatCardModule,
-    //GalleryModule.forRoot({gestures: false}),
-    //LightboxModule.forRoot(),
     UserRoutingModule,
-
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

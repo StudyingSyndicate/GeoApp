@@ -1,16 +1,10 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {CpsNgkmComponent} from "./user/components/projects/items/cps-ngkm/cps-ngkm.component";
-import {MaeinComponent} from "./user/components/projects/items/maein/maein.component";
-import {MaeinGes2Component} from "./user/components/projects/items/maein-ges-2/maein-ges-2.component";
 import {HomeComponent} from "./user/components/home/home.component";
-import {OrnaculComponent} from "./user/components/projects/items/ornacul/ornacul.component";
-import {MaeinGesComponent} from "./user/components/projects/items/maein-ges/maein-ges.component";
-import {OrsugComponent} from "./user/components/projects/items/orsug/orsug.component";
 import {ProjectsComponent} from "./user/components/projects/projects.component";
 import {GeoServicesComponent} from "./user/components/geo-services/geo-services.component";
 import {AboutComponent} from "./user/components/about/about.component";
-import {AccaragComponent} from "./user/components/projects/items/accarag/accarag.component";
+import {ProjectItemComponent} from "./user/components/projects/project-item/project-item.component";
 
 const routes: Routes = [
   {
@@ -28,28 +22,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: ProjectsComponent
-      /*}, {
-        path: 'ornacul',
-        component: OrnaculComponent
+        component: ProjectsComponent,
+        pathMatch: 'full'
       }, {
-        path: 'accarag',
-        component: AccaragComponent
-      }, {
-        path: 'cps-ngkm',
-        component: CpsNgkmComponent
-      }, {
-        path: 'maein',
-        component: MaeinComponent
-      }, {
-        path: 'maein-ges',
-        component: MaeinGesComponent
-      }, {
-        path: 'maein-ges-2',
-        component: MaeinGes2Component
-      }, {
-        path: 'orsug',
-        component: OrsugComponent*/
+        path: ':projectName',
+        component: ProjectItemComponent
       }]
   }
   /*{ path: 'counter', component: CounterComponent },
