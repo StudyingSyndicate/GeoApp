@@ -63,11 +63,6 @@ div.common-text h2 {
   margin-bottom: 40px;
 }
 
-div.common-text {
-  background: rgba(68, 68, 68, 0.9);
-  border-radius: 5px;
-}
-
 /* style for ngx-gallery*/
 .mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
   -webkit-transform: none !important;

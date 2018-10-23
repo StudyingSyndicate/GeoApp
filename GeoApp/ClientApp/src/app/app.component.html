@@ -5,15 +5,13 @@
     </button>
     <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="toolbar-logo"/></a>
     <span class="app-nav-company">Акционерное общество «Геологические Технологии Сибири»</span>
-    <span class="app-spacer"></span>
-    <mat-icon>search</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <app-courusel></app-courusel>
 
 <div>
-  <mat-sidenav-container class="app-sidenav-container">
+  <mat-sidenav-container class="app-sidenav-container" [style.background-color]="isBackgroundTransparent">
     <mat-sidenav
       #sidenav
       mode="side"

@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {HomeComponent} from "./user/components/home/home.component";
 import {ProjectsComponent} from "./user/components/projects/projects.component";
 import {GeoServicesComponent} from "./user/components/geo-services/geo-services.component";
 import {AboutComponent} from "./user/components/about/about.component";
@@ -8,10 +7,6 @@ import {ProjectItemComponent} from "./user/components/projects/project-item/proj
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent,
-    pathMatch: 'full'
-  }, {
     path: 'about',
     component: AboutComponent
   }, {

@@ -3,10 +3,10 @@ import {AppBackgroundImage} from "../models/app-background-image";
 
 @Component({
   selector: 'app-courusel',
-  templateUrl: './courusel.component.html',
-  styleUrls: ['./courusel.component.css']
+  templateUrl: './slideshow.component.html',
+  styleUrls: ['./slideshow.component.css']
 })
-export class CouruselComponent implements OnInit {
+export class SlideshowComponent implements OnInit {
 
   /** Slideshow options*/
 
