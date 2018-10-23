@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
-@import '~@ngx-gallery/core/styles/gallery.css';
-@import '~@ngx-gallery/core/styles/lightbox.css';
+/*@import '~@ngx-gallery/core/styles/gallery.css';
+@import '~@ngx-gallery/core/styles/lightbox.css';*/
 
 body {
   margin: 0;

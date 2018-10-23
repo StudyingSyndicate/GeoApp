@@ -27,7 +27,7 @@ export class OrnaculComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.items = this.imageData.map(item => new ImageItem(item.src, item.preview));
+    //this.items = this.imageData.map(item => new ImageItem(item.src, item.preview));
 
     this.gallery.ref('lightbox').load(this.items);
   }

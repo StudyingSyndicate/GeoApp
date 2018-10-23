@@ -29,7 +29,7 @@ const routes: Routes = [
       {
         path: '',
         component: ProjectsComponent
-      }, {
+      /*}, {
         path: 'ornacul',
         component: OrnaculComponent
       }, {
@@ -49,7 +49,7 @@ const routes: Routes = [
         component: MaeinGes2Component
       }, {
         path: 'orsug',
-        component: OrsugComponent
+        component: OrsugComponent*/
       }]
   }
   /*{ path: 'counter', component: CounterComponent },
