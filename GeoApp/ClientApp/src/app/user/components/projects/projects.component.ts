@@ -40,12 +40,7 @@ export class ProjectsComponent implements OnInit {
     text: 'Изыскательские работы под модернизацию участков ВЛ 35кВ Т-72/74 "РП-7"-ПС №3 и опоры мостового перехода ' +
     'через р. Уй на Майнской ГЭС 2015 г.',
     route: 'maein-ges'
-  }, {
-    name: 'Майнская ГЭС',
-    image: '../../../../assets/projects/maein-ges_1_.jpg',
-    text: ' Изучение ИГУ условий левобережного водосброса майнской ГЭС 2015 г.',
-    route: 'maein-ges-2'
-  },];
+  }, ];
 
   constructor() {
   }
