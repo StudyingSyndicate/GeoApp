@@ -3,8 +3,20 @@
     <button mat-button class="app-menu-button" (click)="sidenav.toggle()" title="Навигация">
       <mat-icon>menu</mat-icon>
     </button>
-    <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="toolbar-logo"/></a>
-    <span class="app-nav-company">Акционерное общество «Геологические Технологии Сибири»</span>
+    <div class="app-main-logo">
+      <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="toolbar-logo"/></a>
+    </div>
+    <div class="app-nav-company-container">
+      <div>
+        <div class="app-nav-company-main-name">« Геологические Технологии Сибири »</div>
+        <div class="app-nav-company-add-container">
+            <div class="app-nav-company-add-name">aкционерное общество</div>
+        </div>
+      </div>
+    </div>
+    <div class="app-main-logo">
+      <a [routerLink]='["/"]'><img alt="" src="../assets/SibGeoTekh_logo.png" class="toolbar-logo"/></a>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
 

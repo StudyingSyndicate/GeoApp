@@ -4,8 +4,35 @@
   height: 100%;
 }
 
-.app-nav-company {
-  font-size: 16px;
+.mat-toolbar-row {
+  height: 70px;
+}
+
+.app-nav-company-main-name {
+  font-size: 28px;
+}
+
+.app-main-logo {
+  margin: 0 70px;
+}
+
+.app-nav-company-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-nav-company-add-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-nav-company-add-name {
+  top: 40px;
+  position: absolute;
+  font-size: 10px;
+  letter-spacing: 3px;
 }
 
 .app-sidenav-container {
