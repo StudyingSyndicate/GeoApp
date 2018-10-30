@@ -37,17 +37,11 @@
 
 .app-sidenav-container {
   position: absolute;
+  top: 0;
   min-height: 100% !important;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
 }
-
-mat-list-item .mat-button {
-  text-align: left;
-}
-
 
 .mat-toolbar {
   position: fixed;
@@ -55,9 +49,16 @@ mat-list-item .mat-button {
 }
 
 mat-sidenav.mat-sidenav {
-  top: 64px;
-  background-color: #fafafa;
+  padding-top: 20px;
+  top: 70px;
+  background-color: rgba(256, 256, 256, .7);
   box-shadow: 6px 0 6px rgba(0, 0, 0, .1);
+
+}
+
+mat-sidenav.mat-sidenav button {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: 900;
 }
 
 mat-toolbar.mat-toolbar mat-toolbar-row {
@@ -89,4 +90,15 @@ a {
   text-align: center;
   bottom: 0;
   margin: 0;
+}
+
+.app-menu-list-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mat-drawer-container {
+  font-family: "Arial", Arial, sans-serif;
+  font-weight: 700;
 }
