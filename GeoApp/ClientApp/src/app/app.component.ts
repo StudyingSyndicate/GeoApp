@@ -26,15 +26,6 @@ export class AppComponent {
     name: 'Проекты',
     link: 'projects'
   }, {
-    name: 'Фотогаллерея',
-    link: ''
-  }, {
-    name: 'Публикации',
-    link: ''
-  }, {
-    name: 'Вакансии',
-    link: ''
-  }, {
     name: 'Контакты',
     link: ''
   }];
