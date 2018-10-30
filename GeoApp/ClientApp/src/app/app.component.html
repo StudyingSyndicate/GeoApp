@@ -30,12 +30,6 @@
       [(opened)]="opened"
       class="app-sidenav">
       <mat-list>
-        <mat-list-item>
-          <span class="app-username">Имя пользователя</span>
-          <span class="app-spacer"></span>
-          <button mat-raised-button color="accent">Выход</button>
-        </mat-list-item>
-
         <mat-list-item *ngFor="let item of sideNavItems;">
           <button
             mat-button
@@ -44,7 +38,6 @@
             (click)="sidenav.toggle()">{{item.name}}
           </button>
         </mat-list-item>
-
       </mat-list>
     </mat-sidenav>
 
