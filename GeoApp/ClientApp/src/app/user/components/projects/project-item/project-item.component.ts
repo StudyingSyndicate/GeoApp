@@ -86,11 +86,10 @@ export class ProjectItemComponent implements OnInit {
   private getOptions(): NgxGalleryOptions[] {
     return [{
       image: false,
-      height: '100px'
-    }, {
-      breakpoint: 500,
+      height: '150px',
       width: '100%',
-      previewForceFullscreen: true
+      previewCloseOnEsc: true,
+      previewCloseOnClick: true,
     }];
   }
 

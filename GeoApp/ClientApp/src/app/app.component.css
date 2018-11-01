@@ -36,44 +36,49 @@
 }
 
 .app-sidenav-container {
-  position: absolute;
-  top: 0;
+  //position: absolute;
+  //top: 0;
   min-height: 100% !important;
   height: 100%;
   width: 100%;
 }
 
+/*
 .mat-toolbar {
   position: fixed;
   z-index: 10;
 }
+*/
 
 mat-sidenav.mat-sidenav {
-  padding-top: 20px;
-  top: 70px;
-  background-color: rgba(256, 256, 256, .7);
+  //padding-top: 20px;
+  //top: 70px;
+  //background-color: rgba(256, 256, 256, .8);
   box-shadow: 6px 0 6px rgba(0, 0, 0, .1);
-
 }
 
+/*
 mat-sidenav.mat-sidenav button {
   font-family: "Arial Black", Arial, sans-serif;
   font-weight: 900;
 }
+*/
 
 mat-toolbar.mat-toolbar mat-toolbar-row {
   padding: 0 16px 0 0;
 }
 
 .app-sidenav-content {
-  padding: 80px 48px 0 48px;
-  min-height: calc(100% - 80px - 20px - 40px); /* 80px - верхний паддинг, 20px - просвет, 40px - высота копирайта*/
+  //padding: 80px 48px 0 48px;
+  min-height: calc(100% - 20px - 40px); /* 80px - верхний паддинг, 20px - просвет, 40px - высота копирайта*/
 }
 
+/*
 a {
   color: inherit;
   text-decoration: inherit;
 }
+*/
 
 .toolbar-logo {
   height: 60px;

@@ -37,6 +37,7 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 import {SlideshowComponent} from './user/components/background-slideshow/slideshow.component';
 import {SharedModule} from "./shared/shared.module";
 import { ProjectItemComponent } from './user/components/projects/project-item/project-item.component';
+import { HomeComponent } from './user/components/home/home.component';
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -64,6 +65,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     MaeinGes2Component,
     SlideshowComponent,
     ProjectItemComponent,
+    HomeComponent,
   ],
   imports: [
     SlideshowModule,

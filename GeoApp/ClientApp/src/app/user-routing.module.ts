@@ -4,9 +4,14 @@ import {ProjectsComponent} from "./user/components/projects/projects.component";
 import {GeoServicesComponent} from "./user/components/geo-services/geo-services.component";
 import {AboutComponent} from "./user/components/about/about.component";
 import {ProjectItemComponent} from "./user/components/projects/project-item/project-item.component";
+import {HomeComponent} from "./user/components/home/home.component";
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    component: HomeComponent
+  }, {
     path: 'about',
     component: AboutComponent
   }, {

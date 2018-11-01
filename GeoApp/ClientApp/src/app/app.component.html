@@ -20,10 +20,10 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<app-courusel></app-courusel>
+<!--<app-courusel></app-courusel>-->
 
 <div>
-  <mat-sidenav-container class="app-sidenav-container" [style.background-color]="isBackgroundTransparent">
+  <mat-sidenav-container class="app-sidenav-container">
     <mat-sidenav
       #sidenav
       mode="side"
@@ -34,7 +34,6 @@
           <div class="app-menu-list-item">
             <button
               mat-button
-              color="primary"
               [routerLink]="item.link"
               (click)="sidenav.toggle()">{{item.name}}
             </button>

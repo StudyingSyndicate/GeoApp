@@ -10,11 +10,11 @@ import {filter} from 'rxjs/operators';
 
 export class AppComponent {
 
-  private readonly BACKGROUND_COLOR_DEFUALT = '#303030';
+  private readonly BACKGROUND_COLOR_DEFAULT = '#303030';
   private readonly BACKGROUND_COLOR_TRANSPARENT = 'transparent';
 
   opened = true;
-  isBackgroundTransparent;
+  //isBackgroundTransparent;
 
   sideNavItems = [{
     name: 'О компании',
@@ -35,11 +35,11 @@ export class AppComponent {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
-      if (event.url.replace('/','').length === 0) {
+      /*if (event.url.replace('/','').length === 0) {
         this.isBackgroundTransparent = this.BACKGROUND_COLOR_TRANSPARENT;
       } else {
-        this.isBackgroundTransparent = this.BACKGROUND_COLOR_DEFUALT;
-      }
+        this.isBackgroundTransparent = this.BACKGROUND_COLOR_DEFAULT;
+      }*/
     });
   }
 
