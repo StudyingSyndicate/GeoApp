@@ -8,19 +8,15 @@ import {Component, OnInit} from '@angular/core';
 export class AboutStaffComponent implements OnInit {
 
   staffItems = [{
-    name: 'Виктор Иванович Совлук',
+    name: 'Совлук Виктор Иванович',
     position: 'Генеральный директор УК "СибГеоТех"',
     image: '../../../../../../assets/sovluk.png'
   }, {
-    name: 'Александр Викторович Совлук',
+    name: 'Совлук Александр Викторович',
     position: 'Директор отдела ООО "Геологические Технологии"',
     image: '../../../../../../assets/asovluk.png'
   }, {
-    name: 'Андрей Сергеевич Хомяков',
-    position: 'Директор ООО "Геологические технологии"',
-    image: '../../../../../../assets/male_icon.png'
-  }, {
-    name: 'Андрей Сергеевич Хомяков',
+    name: 'Хомяков Андрей Сергеевич',
     position: 'Директор ООО "Геологические технологии"',
     image: '../../../../../../assets/male_icon.png'
   }, {
