@@ -36,8 +36,11 @@ import {UserRoutingModule} from "./user-routing.module";
 import {SlideshowModule} from 'ng-simple-slideshow';
 import {SlideshowComponent} from './user/components/background-slideshow/slideshow.component';
 import {SharedModule} from "./shared/shared.module";
-import { ProjectItemComponent } from './user/components/projects/project-item/project-item.component';
-import { HomeComponent } from './user/components/home/home.component';
+import {ProjectItemComponent} from './user/components/projects/project-item/project-item.component';
+import {HomeComponent} from './user/components/home/home.component';
+import {NavigationComponent} from './user/components/navigation/navigation.component';
+import {TopToolbarComponent} from './user/components/navigation/top-toolbar/top-toolbar.component';
+
 /*import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
 
@@ -66,6 +69,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';*/
     SlideshowComponent,
     ProjectItemComponent,
     HomeComponent,
+    NavigationComponent,
+    TopToolbarComponent,
   ],
   imports: [
     SlideshowModule,

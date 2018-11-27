@@ -1,0 +1,28 @@
+<app-top-toolbar (menuClick)="sidenav.toggle()"></app-top-toolbar>
+<mat-sidenav-container class="app-sidenav-container"
+                       [ngStyle]="{'background-color': backgroundColor}">
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    [(opened)]="opened"
+    class="app-sidenav">
+    <mat-list>
+      <mat-list-item *ngFor="let item of sideNavItems;">
+        <div class="app-menu-list-item">
+          <button
+            mat-button
+            [routerLink]="item.link"
+            (click)="sidenav.toggle()">{{item.name}}
+          </button>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="app-sidenav-content">
+      <router-outlet></router-outlet>
+    </div>
+    <p class="app-copyright">© Все права защищены. 2018 год. Studying Syndicate.</p>
+  </mat-sidenav-content>
+</mat-sidenav-container>

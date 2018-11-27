@@ -1,0 +1,47 @@
+.app-menu-button {
+  margin: 0 5px 0 0;
+  padding: 0;
+  height: 100%;
+}
+
+mat-toolbar.mat-toolbar mat-toolbar-row {
+  padding: 0 16px 0 0;
+}
+
+.mat-toolbar-row {
+  height: 70px;
+}
+
+.app-main-logo {
+  margin: 0 70px;
+}
+
+.app-nav-company-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-nav-company-add-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.app-nav-company-main-name {
+  font-size: 28px;
+}
+
+.app-nav-company-add-name {
+  top: 40px;
+  position: absolute;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.toolbar-logo {
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: auto
+}
