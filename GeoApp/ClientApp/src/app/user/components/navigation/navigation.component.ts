@@ -16,7 +16,7 @@ export class NavigationComponent implements OnDestroy {
   private subscription: Subscription;
 
   public opened = true;
-  public backgroundColor: string;
+  public backgroundColor = this.BACKGROUND_COLOR_TRANSPARENT;
 
   public sideNavItems = [{
     name: 'О компании',
