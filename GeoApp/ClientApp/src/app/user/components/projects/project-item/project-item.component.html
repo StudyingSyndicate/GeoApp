@@ -1,3 +1,14 @@
-<button mat-raised-button color="primary" routerLink="/projects">Назад</button>
-<p>{{projectText}}</p>
-<app-gallery [galleryOptions]="galleryOptions" [galleryImages]="galleryImages"></app-gallery>
+<div *ngIf="currentItem" class="app-container">
+  <button mat-raised-button
+          color="primary"
+          routerLink="/projects">К списку проектов</button>
+  <h3>{{currentItem.name}}</h3>
+  <mat-divider></mat-divider>
+  <p>Заказчик: {{currentItem.customer}}</p>
+  <p>Дата сдачи: {{currentItem.endDate}}</p>
+  <p>Тип проекта: {{currentItem.projectType}}</p>
+  <p>Округ: {{currentItem.region}}</p>
+  <p>Галлерея:</p>
+  <app-gallery [galleryOptions]="galleryOptions"
+               [galleryImages]="currentItem.images"></app-gallery>
+</div>
