@@ -29,14 +29,14 @@ export class NavigationComponent implements OnDestroy {
     link: 'projects'
   }, {
     name: 'Контакты',
-    link: ''
+    link: 'contacts'
   }];
 
   constructor(private router: Router) {
     this.subscription = this.router
                             .events
                             .pipe(filter(event => event instanceof NavigationEnd))
-                            .subscribe((event: NavigationEnd) => this.updateBackgroundColor(event.url));
+                            .subscribe((event: NavigationEnd) => this.updateBackgroundColor(event.urlAfterRedirects));
   }
 
   ngOnDestroy() {
@@ -44,6 +44,12 @@ export class NavigationComponent implements OnDestroy {
   }
 
   private updateBackgroundColor(url: string) {
-    this.backgroundColor = url === '/home' ? this.BACKGROUND_COLOR_TRANSPARENT : this.BACKGROUND_COLOR_DEFAULT;
+    if (url === '/home') {
+      this.backgroundColor =  this.BACKGROUND_COLOR_TRANSPARENT;
+      this.opened = true;
+    }
+    else {
+      this.backgroundColor =  this.BACKGROUND_COLOR_DEFAULT;
+    }
   }
 }
